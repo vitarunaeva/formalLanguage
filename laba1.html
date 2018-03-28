@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Лабораторная работа N1</h1>
+<label><b>Массив: </b></label>
+<div id="array"></div>
+<label><b>Новый массив: </b></label>
+<div id="newArray"></div>
+<div class="addItem">
+    <h2>Добавление символов алфавита</h2>
+    <form>
+        <input id ="inputAdd" type="text">
+        <input type="button" value="Добавить" onclick="pushArray()">
+    </form>
+</div>
+<div class="delItem">
+    <h2>Удаление символов алфавита</h2>
+    <form action="">
+        <input id = inputDel type="text">
+        <input type="button" value="Удалить" onclick="delArray()">
+    </form>
+</div>
+<div class="checkItem">
+    <h2>Проверка наличия символа в алфавите</h2>
+    <form action="">
+        <input type="text" id="inputCheck">
+        <input type="button" value="Проверить" onclick="checkArray()">
+    </form>
+</div>
+<div class="checkWord">
+    <h2>Проверка слова на соответствие заданному алфавиту</h2>
+    <form>
+        <input type="text" id="inputWord">
+        <input type="button" value="Проверить" onclick="wordArray()">
+    </form>
+</div>
+<div class="dictionary">
+    <h2>Словарь слов</h2>
+    <input type="button" value="Создать словарь" onclick="createDict()" >
+    <div id="dictArray"></div>
+    <form>
+        <label>Добавить новое слово в словарь</label>
+        <input id="inputAddStr" type="text">
+        <input type="button" value="Добавить" onclick="addStr()">
+    </form>
+    <form>
+        <label>Удалить слово из словаря</label>
+        <input id="inputDelStr" type="text">
+        <input type="button" value="Удалить" onclick="delStr()">
+    </form>
+    <form>
+        <label>Поиск в словаре</label>
+        <input id="inputSearchStr" type="text">
+        <input type="button" value="Искать" onclick="searchStr()">
+    </form>
+    <form>
+        <label>Отсортировать по алфавиту</label>
+        <input type="button" value="Отсортировать" onclick="sortStr()">
+    </form>
+</div>
+<script src="laba1.js"></script>
+</body>
+</html>
